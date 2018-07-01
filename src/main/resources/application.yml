@@ -7,11 +7,11 @@ spring:
 
 
 server:
-  port: 8080
+  port: 8083
 
 #management endpoints on a separate port
 management:
-  port: 8080
+  port: 8083
   security:
     enabled: false # management port is internal only. no need to secure it.
 
