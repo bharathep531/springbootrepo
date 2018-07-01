@@ -1,0 +1,30 @@
+### This is the main way to configure the application (other than annotations).
+### This file is in Yaml format but you can also configure spring boot using the traditional
+### Java properties file format. 
+spring:
+  application:
+    name: spring-jpa-postgresql-angularjs
+
+
+server:
+  port: 8080
+
+#management endpoints on a separate port
+management:
+  port: 8080
+  security:
+    enabled: false # management port is internal only. no need to secure it.
+
+#default project info followed by actual injected pom-specified values.
+project:
+  name: spring-boot-rest-example
+  version: 0.1
+  description: boot-example default description
+info:
+  build:
+    artifact: ${project.artifactId}
+    name: ${project.name}
+    description: ${project.description}
+    version: ${project.version}
+
+
