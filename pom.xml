@@ -104,11 +104,12 @@
                 <artifactId>maven-dependency-plugin</artifactId>
                 <executions>
                     <execution>
-                        <id>unpack</id>
-                        <phase>package</phase>
-                        <goals>
-                            <goal>unpack</goal>
-                        </goals>
+                       <id>default</id>
+		<phase>install</phase>
+		<goals>
+			<goal>build</goal>
+			<goal>push</goal>
+		</goals>
                         <configuration>
                             <artifactItems>
                                 <artifactItem>
